@@ -1,5 +1,8 @@
 
-from ..src.math_operations import add, sub
+import sys
+sys.path.append('../src')  # Add the src directory to the Python path
+
+from math_operations import add, sub
 
 def test_add():
     assert add(2,3)==5
